@@ -5,31 +5,49 @@
 @layer base {
     @font-face {
         font-family: 'dm-500';
-        src: url("./font/dm-sans/DMSans-Medium.ttf") format("truetype");
+        src: url("../font/dm-sans/DMSans-Medium.ttf") format("truetype");
     }
 
     @font-face {
         font-family: 'dm-400';
-        src: url("./font/dm-sans/DMSans-Regular.ttf") format("truetype");
+        src: url("../font/dm-sans/DMSans-Regular.ttf") format("truetype");
     }
 
     @font-face {
         font-family: 'poppins-700';
-        src: url("./font/poppins/Poppins-Bold.ttf") format("truetype");
+        src: url("../font/poppins/Poppins-Bold.ttf") format("truetype");
     }
 
     @font-face {
         font-family: 'poppins-500';
-        src: url("./font/poppins/Poppins-Medium.ttf") format("truetype");
+        src: url("../font/poppins/Poppins-Medium.ttf") format("truetype");
     }
 
     @font-face {
         font-family: 'poppins-400';
-        src: url("./font/poppins/Poppins-Regular.ttf") format("truetype");
+        src: url("../font/poppins/Poppins-Regular.ttf") format("truetype");
     }
 
     @font-face {
         font-family: 'poppins-300';
-        src: url("./font/poppins/Poppins-Light.ttf") format("truetype");
+        src: url("../font/poppins/Poppins-Light.ttf") format("truetype");
+    }
+
+    .text-gradient-1 {
+        background: linear-gradient(to right, rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-2 {
+        background: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-3 {
+        background: linear-gradient(to bottom, rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
