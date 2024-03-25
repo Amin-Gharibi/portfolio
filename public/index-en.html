@@ -8,13 +8,19 @@
     <title>MohamadAmin Gharibi</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class="pt-10 pb-12">
+<body class="pt-10 pb-12 overflow-hidden">
+<svg class="hidden">
+    <symbol id="burger-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </symbol>
+</svg>
+
 
 <header class="container max-w-[1193px] flex justify-between items-center">
-    <h1 class="font-dm500 text-gradient-1 text-2xl">Amin Gharibi</h1>
-    <div class="flex items-center gap-x-12 text-darkGray">
-        <nav>
-            <ul class="flex gap-x-16 font-dm500 text-xl">
+    <h1 class="font-dm500 text-gradient-1 text-2xl sm:text-xl md:text-2xl">Amin Gharibi</h1>
+    <div class="flex items-center sm:gap-x-3  lg:gap-x-12 text-darkGray">
+        <nav class="hidden sm:block">
+            <ul class="flex sm:gap-x-3 md:gap-x-5 lg:gap-x-8 xl:gap-x-16 font-dm500 sm:text-base md:text-xl">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Tech Stack</a></li>
@@ -22,7 +28,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="flex gap-x-5">
+        <div class="hidden xs:flex gap-x-6 sm:gap-x-3 lg:gap-x-5">
             <a target="_blank" href="https://github.com/Amin-Gharibi">
                 <img class="w-[30px] h-[30px]" src="./img/github-icon.svg" alt="Github">
             </a>
@@ -34,8 +40,36 @@
             </a>
         </div>
     </div>
+    <div class="sm:hidden ">
+        <div class="hamburger-menu-icon relative">
+            <svg class="w-8 h-8 text-darkGray">
+                <use href="#burger-menu"></use>
+            </svg>
+
+            <div class="header--menu__mobile absolute top-full right-1 w-64 h-max p-5 rounded shadow-custom-shadow transition-all max-h-0 max-w-0 opacity-0 invisible">
+                <ul class="flex flex-col gap-y-3 text-lg text-darkGray font-dm500">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tech Stack</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="flex justify-center items-center gap-x-7 mt-6">
+                    <a target="_blank" href="https://github.com/Amin-Gharibi">
+                        <img class="w-[30px] h-[30px]" src="./img/github-icon.svg" alt="Github">
+                    </a>
+                    <a target="_blank" href="https://t.me/AmiinGharibi">
+                        <img class="w-[30px] h-[30px]" src="./img/telegram-icon.svg" alt="Telegram">
+                    </a>
+                    <a target="_blank" href="https://linkedin.com/in/MohamadAmin-Gharibi">
+                        <img class="w-[30px] h-[30px]" src="./img/linked-in-icon.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
-<script src="scripts/app.js"></script>
+<script src="scripts/app.js" type="module"></script>
 </body>
 </html>
