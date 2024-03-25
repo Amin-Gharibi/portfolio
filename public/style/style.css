@@ -444,6 +444,42 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'dm-500';
+
+  src: url("./font/dm-sans/DMSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'dm-400';
+
+  src: url("./font/dm-sans/DMSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'poppins-700';
+
+  src: url("./font/poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'poppins-500';
+
+  src: url("./font/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'poppins-400';
+
+  src: url("./font/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'poppins-300';
+
+  src: url("./font/poppins/Poppins-Light.ttf") format("truetype");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -542,4 +578,12 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }

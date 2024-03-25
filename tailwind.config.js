@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./public/*.{html,js}"],
   theme: {
+    extend: {
+      container: {
+        center: true
+      }
+    },
     color: {
       'gradient-1': "linear-gradient(to right, rgba(0, 192, 253, 1), rgba(231, 15, 170, 1))",
       'gradient-2': "linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1))",
@@ -18,7 +23,16 @@ module.exports = {
 
     boxShadow: {
       'custom-shadow': '2px 2px 100px 0 rgba(0, 0, 0, 0.2)'
-    }
+    },
+
+    fontFamily: {
+      "dm500": "dm-500",
+      "dm400": "dm-400",
+      "poppins700": "poppins-700",
+      "poppins500": "poppins-500",
+      "poppins400": "poppins-400",
+      "poppins300": "poppins-300",
+    },
   },
   plugins: [],
 }

@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'dm-500';
+        src: url("./font/dm-sans/DMSans-Medium.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'dm-400';
+        src: url("./font/dm-sans/DMSans-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'poppins-700';
+        src: url("./font/poppins/Poppins-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'poppins-500';
+        src: url("./font/poppins/Poppins-Medium.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'poppins-400';
+        src: url("./font/poppins/Poppins-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: 'poppins-300';
+        src: url("./font/poppins/Poppins-Light.ttf") format("truetype");
+    }
+}
