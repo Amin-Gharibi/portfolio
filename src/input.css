@@ -74,4 +74,14 @@
         @apply max-w-max max-h-max visible opacity-100;
         animation: slideIn 0.2s ease forwards;
     }
+
+    .tech-stack--infinite-swiper,
+    .tech-stack--infinite-swiper__reverse{
+        @apply relative w-full h-32;
+    }
+
+    .tech-stack--infinite-swiper img,
+    .tech-stack--infinite-swiper__reverse img{
+        @apply absolute top-0 w-32;
+    }
 }

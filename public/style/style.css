@@ -666,6 +666,20 @@ video {
   animation: slideIn 0.2s ease forwards;
 }
 
+.tech-stack--infinite-swiper,
+    .tech-stack--infinite-swiper__reverse {
+  position: relative;
+  height: 8rem;
+  width: 100%;
+}
+
+.tech-stack--infinite-swiper img,
+    .tech-stack--infinite-swiper__reverse img {
+  position: absolute;
+  top: 0px;
+  width: 8rem;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -694,8 +708,24 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .inline-block {
@@ -710,8 +740,8 @@ video {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-40 {
+  height: 10rem;
 }
 
 .h-8 {
@@ -731,28 +761,12 @@ video {
   height: max-content;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-64 {
@@ -769,22 +783,6 @@ video {
 
 .w-\[30px\] {
   width: 30px;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .max-w-0 {
@@ -837,18 +835,6 @@ video {
   overflow: hidden;
 }
 
-.whitespace-pre-wrap {
-  white-space: pre-wrap;
-}
-
-.text-wrap {
-  text-wrap: wrap;
-}
-
-.break-words {
-  overflow-wrap: break-word;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -890,6 +876,10 @@ video {
   font-family: dm-500;
 }
 
+.font-poppins400 {
+  font-family: poppins-400;
+}
+
 .font-poppins700 {
   font-family: poppins-700;
 }
@@ -899,9 +889,14 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -909,9 +904,9 @@ video {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .leading-10 {
@@ -967,6 +962,16 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .xs\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xs\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 640px) {
@@ -995,6 +1000,16 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
