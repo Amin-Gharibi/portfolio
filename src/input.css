@@ -56,4 +56,22 @@
     .pic-container {
         background: linear-gradient(to bottom, rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
     }
+    
+    @keyframes slideIn {
+        0% {
+            right: 80px;
+        }
+        100% {
+            max-width: max-content;
+            max-height: max-content;
+            visibility: visible;
+            opacity: 1;
+            right: 4px;
+        }
+    }
+
+    .header--menu__mobile.active {
+        @apply max-w-max max-h-max visible opacity-100;
+        animation: slideIn 0.2s ease forwards;
+    }
 }
