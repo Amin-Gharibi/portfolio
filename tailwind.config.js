@@ -28,7 +28,8 @@ module.exports = {
       "dark": "rgba(25, 25, 25, 1)",
       "green": "rgba(1, 140, 15, 1)",
       "lightGreen": "rgba(215, 255, 224, 1)",
-      "white": "#ffffff"
+      "white": "#ffffff",
+      "black": "#000000"
     },
 
     boxShadow: {
