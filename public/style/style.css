@@ -1396,3 +1396,7 @@ html {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.dark\:text-lightGray:where(.dark, .dark *) {
+  color: rgba(217, 217, 217, 1);
+}
