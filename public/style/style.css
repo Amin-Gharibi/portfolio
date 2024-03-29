@@ -825,6 +825,10 @@ body::-webkit-scrollbar {
   height: 30px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-max {
   height: -moz-max-content;
   height: max-content;
@@ -834,8 +838,48 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[240px\] {
+  height: 240px;
+}
+
+.h-\[235px\] {
+  height: 235px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[140px\] {
+  height: 140px;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-0 {
   max-height: 0px;
+}
+
+.min-h-\[140px\] {
+  min-height: 140px;
+}
+
+.min-h-16 {
+  min-height: 4rem;
 }
 
 .w-16 {
@@ -885,6 +929,10 @@ body::-webkit-scrollbar {
 
 .max-w-\[700px\] {
   max-width: 700px;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .grid-rows-2 {
@@ -1203,6 +1251,10 @@ body::-webkit-scrollbar {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-darkBlue {
+  color: rgba(30, 14, 98, 1);
+}
+
 .text-darkGray {
   color: rgba(102, 102, 102, 1);
 }
@@ -1227,10 +1279,6 @@ body::-webkit-scrollbar {
   color: rgba(66, 68, 110, 1);
 }
 
-.text-darkBlue {
-  color: rgba(30, 14, 98, 1);
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1247,6 +1295,10 @@ body::-webkit-scrollbar {
   --tw-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
   --tw-shadow-colored: 2px 2px 100px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -1400,6 +1452,11 @@ body::-webkit-scrollbar {
     line-height: 2.25rem;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1432,11 +1489,6 @@ body::-webkit-scrollbar {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
