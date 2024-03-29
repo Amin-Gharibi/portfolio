@@ -716,6 +716,11 @@ body::-webkit-scrollbar {
   z-index: 50;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -762,6 +767,10 @@ body::-webkit-scrollbar {
 
 .mt-80 {
   margin-top: 20rem;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -819,6 +828,10 @@ body::-webkit-scrollbar {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-0 {
@@ -1214,6 +1227,10 @@ body::-webkit-scrollbar {
   color: rgba(66, 68, 110, 1);
 }
 
+.text-darkBlue {
+  color: rgba(30, 14, 98, 1);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1288,6 +1305,11 @@ body::-webkit-scrollbar {
   .xs\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1410,6 +1432,11 @@ body::-webkit-scrollbar {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1557,6 +1584,11 @@ body::-webkit-scrollbar {
   .xl\:gap-x-16 {
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:text-\[42px\] {
