@@ -1383,3 +1383,15 @@ html {
 .dark\:bg-dark:where(.dark, .dark *) {
   background-color: rgba(25, 25, 25, 1);
 }
+
+.dark\:fill-midGray:where(.dark, .dark *) {
+  fill: rgba(167, 167, 167, 1);
+}
+
+.dark\:text-lightGray:where(.dark, .dark *) {
+  color: rgba(217, 217, 217, 1);
+}
+
+.dark\:text-midGray:where(.dark, .dark *) {
+  color: rgba(167, 167, 167, 1);
+}
