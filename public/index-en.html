@@ -10,14 +10,12 @@
     <script type="text/javascript">
 		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 			document.documentElement.classList.add('dark')
-			localStorage.theme = 'dark'
 		} else {
 			document.documentElement.classList.remove('dark')
-			localStorage.theme = 'light'
 		}
     </script>
 </head>
-<body class="pt-10 pb-12">
+<body class="pt-10 pb-12 dark:bg-dark">
 <svg class="hidden">
     <symbol id="burger-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor">
@@ -78,8 +76,11 @@
         </nav>
         <div class="hidden xs:flex gap-x-6 sm:gap-x-3 lg:gap-x-5">
             <button class="toggle-theme hidden sm:block">
-                <svg class="w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray">
-                    <use></use>
+                <svg class="hidden dark:block w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray">
+                    <use href="#sun-icon"></use>
+                </svg>
+                <svg class="block dark:hidden w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray">
+                    <use href="#moon-icon"></use>
                 </svg>
             </button>
             <a target="_blank" href="https://github.com/Amin-Gharibi">
@@ -116,8 +117,11 @@
                 </ul>
                 <div class="flex justify-center items-center gap-x-7 mt-6">
                     <button class="toggle-theme">
-                        <svg class="w-[30px] h-[30px] text-darkGray">
-                            <use></use>
+                        <svg class="hidden dark:block w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray">
+                            <use href="#sun-icon"></use>
+                        </svg>
+                        <svg class="block dark:hidden w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray">
+                            <use href="#moon-icon"></use>
                         </svg>
                     </button>
                     <a target="_blank" href="https://github.com/Amin-Gharibi">
