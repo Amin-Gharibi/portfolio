@@ -1,10 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects | MohamadAmin Gharibi</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="text/javascript">
+		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark')
+		} else {
+			document.documentElement.classList.remove('dark')
+		}
+    </script>
 </head>
-<body>
+<body class="pt-10 pb-12 dark:bg-dark transition-all">
+<svg class="hidden">
+    <symbol id="burger-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+    </symbol>
 
+    <symbol id="github-icon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z"/>
+    </symbol>
+
+    <symbol id="linked-in-icon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_8_50)">
+            <path d="M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77997 8.48251 8.97297C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97297C11.571 9.77997 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685Z"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_8_50">
+                <rect width="30" height="30" fill="white"/>
+            </clipPath>
+        </defs>
+    </symbol>
+
+    <symbol id="telegram-icon" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100" style="border-radius: 50%; overflow: visible">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="SVGRepo_iconCarrier">
+            <g>
+                <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                      d="M0,0v100h100V0H0z M84.404,22.151l-11.768,56.651 c-0.277,1.336-1.843,1.941-2.948,1.138l-16.054-11.656c-0.974-0.708-2.304-0.67-3.237,0.091l-8.901,7.256 c-1.033,0.845-2.59,0.374-2.985-0.898l-6.181-19.877l-15.968-5.96c-1.622-0.608-1.636-2.898-0.018-3.521L82.179,20.011 C83.308,19.474,84.835,20.675,84.404,22.151z"/>
+                <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                      d="M68.985,32.379l-31.208,19.221c-1.196,0.738-1.759,2.183-1.373,3.535 l3.374,11.856c0.24,0.84,1.459,0.754,1.576-0.114l0.876-6.502c0.166-1.224,0.749-2.352,1.655-3.195l25.747-23.942 C70.443,32.773,69.798,31.914,68.985,32.379z"/>
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+    </symbol>
+
+    <symbol id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+    </symbol>
+</svg>
+
+<header class="container max-w-[1193px] flex justify-between items-center">
+    <h1 class="font-dm500 text-gradient-1 text-2xl sm:text-xl md:text-2xl">Amin Gharibi</h1>
+    <!--desktop header-->
+    <div class="flex items-center sm:gap-x-3  lg:gap-x-10 text-darkGray dark:text-midGray">
+        <nav class="hidden sm:block">
+            <ul class="flex sm:gap-x-3 md:gap-x-3 lg:gap-x-8 xl:gap-x-16 font-dm500 sm:text-base md:text-xl">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/tech-stack.html">Tech Stack</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hidden xs:flex gap-x-6 sm:gap-x-3 lg:gap-x-5">
+            <button class="toggle-theme hidden sm:block">
+                <svg class="hidden dark:block w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray dark:text-midGray">
+                    <use href="#sun-icon"></use>
+                </svg>
+                <svg class="block dark:hidden w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray dark:text-midGray">
+                    <use href="#moon-icon"></use>
+                </svg>
+            </button>
+            <a target="_blank" href="https://github.com/Amin-Gharibi">
+                <svg class="w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] fill-darkGray dark:fill-midGray">
+                    <use href="#github-icon"></use>
+                </svg>
+            </a>
+            <a target="_blank" href="https://t.me/AmiinGharibi">
+                <svg class="w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] fill-darkGray dark:fill-midGray rounded-full">
+                    <use href="#telegram-icon"></use>
+                </svg>
+            </a>
+            <a target="_blank" href="https://linkedin.com/in/MohamadAmin-Gharibi">
+                <svg class="w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] fill-darkGray dark:fill-midGray">
+                    <use href="#linked-in-icon"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!--mobile header-->
+    <div class="sm:hidden ">
+        <div class="hamburger-menu-icon relative">
+            <svg class="w-8 h-8 text-darkGray dark:text-midGray">
+                <use href="#burger-menu"></use>
+            </svg>
+
+            <div class="header--menu__mobile absolute top-full right-20 w-64 h-max p-5 rounded shadow-custom-shadow bg-white dark:bg-dark transition-all max-h-0 max-w-0 opacity-0 invisible z-50">
+                <ul class="flex flex-col gap-y-3 text-lg text-darkGray dark:text-midGray font-dm500">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/tech-stack.html">Tech Stack</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <div class="flex justify-center items-center gap-x-7 mt-6">
+                    <button class="toggle-theme">
+                        <svg class="hidden dark:block w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray dark:text-midGray">
+                            <use href="#sun-icon"></use>
+                        </svg>
+                        <svg class="block dark:hidden w-[30px] h-[30px] sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-[30px] lg:h-[30px] text-darkGray dark:text-midGray">
+                            <use href="#moon-icon"></use>
+                        </svg>
+                    </button>
+                    <a target="_blank" href="https://github.com/Amin-Gharibi">
+                        <svg class="w-[30px] h-[30px] fill-darkGray dark:fill-midGray">
+                            <use href="#github-icon"></use>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://t.me/AmiinGharibi">
+                        <svg class="w-[30px] h-[30px] fill-darkGray dark:fill-midGray rounded-full">
+                            <use href="#telegram-icon"></use>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://linkedin.com/in/MohamadAmin-Gharibi">
+                        <svg class="w-[30px] h-[30px] fill-darkGray dark:fill-midGray">
+                            <use href="#linked-in-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mt-10 sm:mt-16 md:mt-20 lg:mt-28 container max-w-[1193px]">
+    <!--projects-->
+    <div class="container">
+        <h2 class="text-purple dark:text-lightGray font-poppins700 text-2xl sm:text-3xl xl:text-[42px]">
+            Projects
+        </h2>
+        <!--about-->
+        <p class="max-w-[700px] mt-2 sm:mt-6 text-darkGray dark:text-midGray font-poppins400 text-sm sm:text-base xl:text-lg xl:leading-[26px]">
+            Things I've built so far
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-10 xl:gap-[50px] mt-10 xl:mt-24">
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-custom-shadow dark:bg-darkCards">
+                <img src="./img/project-cover-1.jpg" alt="cover">
+                <div class="px-4 py-5 xs:px-5 xs:py-7 sm:px-8">
+                    <h2 class="font-poppins500 text-xl xs:text-2xl sm:text-[28px] text-black dark:text-lightGray">
+                        Project Tile Goes Here
+                    </h2>
+                    <p class="mt-4 font-poppins300 text-sm xs:text-base sm:text-lg text-darkGray dark:text-lightGray">
+                        This is sample project description random things are here in description This is sample project
+                        lorem ipsum generator for dummy content
+                    </p>
+                    <span class="inline-block mt-3 font-poppins400 text-xs xs:text-sm sm:text-base text-purple dark:text-lightGray">
+                        Tech Stack:
+                        <span class="font-poppins300 xs:text-sm">
+                            Html, JavaScript, Sass, React
+                        </span>
+                    </span>
+                    <div class="mt-3 xs:mt-5 flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex items-center gap-x-2.5">
+                            <img src="./img/icons/chain-icon.svg" alt="chain-icon" class="block dark:hidden">
+                            <img src="./img/icons/chain-icon-dark.svg" alt="chain-icon" class="hidden dark:block">
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">Link
+                                Preview</a>
+                        </div>
+                        <div class="flex items-center gap-x-2.5">
+                            <svg class="w-5 h-5 fill-black dark:fill-white">
+                                <use href="#github-icon"></use>
+                            </svg>
+                            <a href="#"
+                               class="font-poppins400 text-sm xs:text-base underline underline-offset-2 text-black dark:text-white">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="scripts/shared.js" type="module"></script>
 </body>
 </html>
