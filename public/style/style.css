@@ -1384,8 +1384,20 @@ html {
   background-color: rgba(25, 25, 25, 1);
 }
 
+.dark\:bg-darkCards:where(.dark, .dark *) {
+  background-color: rgba(54, 54, 54, 1);
+}
+
 .dark\:fill-midGray:where(.dark, .dark *) {
   fill: rgba(167, 167, 167, 1);
+}
+
+.dark\:fill-white:where(.dark, .dark *) {
+  fill: #ffffff;
+}
+
+.dark\:text-lightGray:where(.dark, .dark *) {
+  color: rgba(217, 217, 217, 1);
 }
 
 .dark\:text-midGray:where(.dark, .dark *) {
@@ -1395,8 +1407,4 @@ html {
 .dark\:text-white:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark\:text-lightGray:where(.dark, .dark *) {
-  color: rgba(217, 217, 217, 1);
 }
