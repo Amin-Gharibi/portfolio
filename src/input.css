@@ -37,6 +37,10 @@
         scroll-behavior: smooth;
     }
 
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
     .text-gradient-1 {
         background: linear-gradient(to right, rgba(0, 192, 253, 1), rgba(231, 15, 170, 1));
         -webkit-background-clip: text;
